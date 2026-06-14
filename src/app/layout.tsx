@@ -3,6 +3,7 @@ import { Inter, Outfit } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import { Navbar } from "@/components/sections/navbar";
+import { Analytics } from "@vercel/analytics/next"
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 const outfit = Outfit({ subsets: ["latin"], variable: "--font-heading" });
@@ -16,7 +17,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://your-domain.com", // Replace with actual domain after deployment
+    url: "https://jifiriya.vercel.app/", // Replace with actual domain after deployment
     title: "Jifriya Nargees | Full Stack Developer",
     description: "Engineering high-performance digital experiences. Explore the portfolio of Jifriya Nargees.",
     siteName: "Jifriya Nargees Portfolio",
@@ -47,6 +48,7 @@ export default function RootLayout({
       >
         <Navbar />
         {children}
+        <Analytics />
       </body>
     </html>
   );
