@@ -26,6 +26,9 @@ export const metadata: Metadata = {
     title: "Jifriya Nargees | Full Stack Developer",
     description: "Full Stack Developer specializing in scalable web applications.",
   },
+  verification: {
+    google: "SeRnuMCuptWgT-jx5e_LwgRGOrehvmLIXWUe3UT_WCA"
+  }
 };
 
 export default function RootLayout({
